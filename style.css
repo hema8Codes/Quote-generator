@@ -111,6 +111,20 @@ button {
     font-size: 1.5rem;
 }
 
+.heart{
+    color: #000;
+    min-height: 110vh;
+    font-weight: 666; 
+    text-align: bottom; 
+    vertical-align: bottom;
+    vertical-align: middle;
+    text-emphasis-position: bottom;
+    font-size: large;
+    display: flexbox;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
 /* Loader */
 .loader {
     border: 16px solid #f3f3f3; 
