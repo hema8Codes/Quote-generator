@@ -22,27 +22,27 @@ body {
     justify-content: center;
 }
 
+
 .feather {
- 
-    display: flex;
     top: 200%;
     right: 20%;
     left: 100%;
     transform: translate(420%,-200%);
 }
+
 img {
   
       vertical-align: middle;
       filter: rgb(30, 169, 233); /* IE5+ */
       -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-      -webkit-transition: all .8s ease-in-out; 
      
     }
 
     img:hover {
     filter: none;
       -webkit-filter: grayscale(0);
-      -webkit-transform: scale(1.05);
+      /* -webkit-transform: scale(1.05); */
+      
     }
 
 .quote-container {
@@ -112,18 +112,28 @@ button {
 }
 
 .heart{
-    color: #000;
-    min-height: 110vh;
-    font-weight: 666; 
-    text-align: bottom; 
-    vertical-align: bottom;
-    vertical-align: middle;
-    text-emphasis-position: bottom;
-    font-size: large;
-    display: flexbox;
-    /* display: flex; */
-    /* align-items: center; */
+    color: rgb(251, 251, 251);
+    font-size: 30px;
+    font-weight: bolder;
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 93%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
 }
+
+.fh {
+    color: #E90606;
+    margin: 0 3px;
+    font-size: 10px;
+}
+
 
 /* Loader */
 .loader {
@@ -133,6 +143,8 @@ button {
     width: 100px;
     height: 100px;
     animation: spin 2s linear infinite;
+    margin-left: 28%;
+    margin-right: 30%;
   }
   
   @keyframes spin {
