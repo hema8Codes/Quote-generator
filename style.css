@@ -6,7 +6,7 @@ html {
 
 body {
     margin: 0;
-    min-height: 100vh;
+    min-height: 110vh;
 
 
     /* view port height */
@@ -27,8 +27,8 @@ body {
     display: flex;
     top: 200%;
     right: 20%;
-    left: 20%;
-    transform: translate(350%,-200%);
+    left: 100%;
+    transform: translate(420%,-200%);
 }
 img {
   
@@ -42,10 +42,12 @@ img {
     img:hover {
     filter: none;
       -webkit-filter: grayscale(0);
-      -webkit-transform: scale(1.01);
+      -webkit-transform: scale(1.05);
     }
 
 .quote-container {
+    margin-left: 10%;
+    margin-right: 19%;
     width: auto;
     max-width: 900px;
     padding: 20px 30px;
