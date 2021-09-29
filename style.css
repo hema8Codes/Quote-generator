@@ -36,12 +36,26 @@ body {
       background-color: #2a2ae6;
     }
     100% {
-      background-color: #4b8df1;
+      background-color: #07032e;
     }
   }
 
 .title {
     color: #e0f0f0;
+    font-size: 35px;
+    min-width: 10vh;
+    min-height: 10vh;
+    font-weight: bolder;
+    display: block;
+    bottom: 100%;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 30%;
+    /* bottom: auto; */
+    /* right: auto; */
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
   }
 
   header {
@@ -54,6 +68,7 @@ body {
     width: 100vw;
     background-color: #4e67f8;
     box-shadow: 0px 3px 4px rgba(255, 255, 255, 0.8);
+    
 }
 
   .fa {
