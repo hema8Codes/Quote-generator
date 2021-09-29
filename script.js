@@ -1,3 +1,4 @@
+//declare constants for dynamic elements
 const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
@@ -22,34 +23,37 @@ function removeLoadingSpinner() {
     }
 }
 
-// Get Quote From API
-async function getQuote() {
+let apiQuotes =[];
+// Show new quote
+function newQuote() {
     showLoadingSpinner();
-    const proxyUrl = 'https://radiant-refuge-42891.herokuapp.com/'
-    const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
-    try {
-        const response = await fetch(proxyUrl + apiUrl);
-        const data = await response.json();
-        // If Author is blank, add 'Unknown'
-        if (data.quoteAuthor === null) {
-            authorText.innerText = 'Unknown';
-        } else {
-            authorText.innerText = data.quoteAuthor;
-        }
-        // Reduce font size for long quotes
-        if (data.quoteText.length > 120) {
-            quoteText.classList.add('long-quote');
-        } else {
-            quoteText.classList.remove('long-quote');
-        }
-        quoteText.innerText = data.quoteText;
-        // Stop Loader, Show Quote
-        removeLoadingSpinner();
-    } catch (error) {
-        //getQuote(); //recursive function
-        //catch error here
+    // Pick a random quote from apiQuotes array
+    const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
+    // Check if Author field is blank and replace it with 'Unknown'
+    authorText.innerText = quote.author ? quote.author : "unknown";
+    // Check Quote length to determine styling
+    if (quote.text.length > 120) {
+      quoteText.classList.add("long-quote");
+    } else {
+      quoteText.classList.remove("long-quote");
     }
-}
+    // Set quote and hide loader
+    quoteText.innerText = quote.text;
+    removeLoadingSpinner();
+  }
+  
+  // Get quotes from API
+  async function getQuotes() {
+    showLoadingSpinner();
+    const apiUrl = "https://type.fit/api/quotes";
+    try {
+      const response = await fetch(apiUrl);
+      apiQuotes = await response.json();
+      newQuote();
+    } catch (error) {
+      // Catch error here
+    }
+  }
 
 // Tweet Quote
 function tweetQuote() {
@@ -60,10 +64,12 @@ function tweetQuote() {
 }
 
 // Event Listeners
-newQuoteBtn.addEventListener('click', getQuote);
+newQuoteBtn.addEventListener('click', newQuote);
 twitterBtn.addEventListener('click', tweetQuote);
 
 // On Load
-getQuote();
+getQuotes();
+
+
 
 
