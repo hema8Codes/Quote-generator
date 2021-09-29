@@ -60,18 +60,6 @@ const localQuotes = [
     author: 'Wayne Dyer',
   },
   {
-    text: 'Today is the tomorrow we worried about yesterday.',
-    author: null,
-  },
-  {
-    text: "It's easier to see the mistakes on someone else's paper.",
-    author: null,
-  },
-  {
-    text: 'Every man dies. Not every man really lives.',
-    author: null,
-  },
-  {
     text: 'To lead people walk behind them.',
     author: 'Lao Tzu',
   },
@@ -108,10 +96,6 @@ const localQuotes = [
     author: 'Confucius',
   },
   {
-    text: 'The day is already blessed, find peace within it.',
-    author: null,
-  },
-  {
     text: 'From error to error one discovers the entire truth.',
     author: 'Sigmund Freud',
   },
@@ -142,10 +126,6 @@ const localQuotes = [
   {
     text: 'One fails forward toward success.',
     author: 'Charles Kettering',
-  },
-  {
-    text: 'From small beginnings come great things.',
-    author: null,
   },
   {
     text: 'Learning is a treasure that will follow its owner everywhere',
@@ -332,14 +312,6 @@ const localQuotes = [
     author: 'Sophocles',
   },
   {
-    text: 'It takes both sunshine and rain to make a rainbow.',
-    author: null,
-  },
-  {
-    text: 'A beautiful thing is never perfect.',
-    author: null,
-  },
-  {
     text: 'Only do what your heart tells you.',
     author: 'Princess Diana',
   },
@@ -384,10 +356,6 @@ const localQuotes = [
     author: 'Bo Jackson',
   },
   {
-    text: 'Every new day is another chance to change your life.',
-    author: null,
-  },
-  {
     text: 'Smile, breathe, and go slowly.',
     author: 'Thich Nhat Hanh',
   },
@@ -404,10 +372,6 @@ const localQuotes = [
     author: 'Seneca',
   },
   {
-    text: 'Some pursue happiness, others create it.',
-    author: null,
-  },
-  {
     text: 'He that is giddy thinks the world turns round.',
     author: 'William Shakespeare',
   },
@@ -418,10 +382,6 @@ const localQuotes = [
   {
     text: 'Do something wonderful, people may imitate it.',
     author: 'Albert Schweitzer',
-  },
-  {
-    text: 'We do what we do because we believe.',
-    author: null,
   },
   {
     text: 'Do one thing every day that scares you.',
@@ -448,10 +408,6 @@ const localQuotes = [
     author: 'Leonardo da Vinci',
   },
   {
-    text: 'The harder you fall, the higher you bounce.',
-    author: null,
-  },
-  {
     text: 'Trusting our intuition often saves us from disaster.',
     author: 'Anne Wilson Schaef',
   },
@@ -474,10 +430,6 @@ const localQuotes = [
   {
     text: 'The simplest things are often the truest.',
     author: 'Richard Bach',
-  },
-  {
-    text: 'Everyone smiles in the same language.',
-    author: null,
   },
   {
     text: 'Yesterday I dared to struggle. Today I dare to win.',
@@ -546,9 +498,5 @@ const localQuotes = [
   {
     text: 'Growth itself contains the germ of happiness.',
     author: 'Pearl Buck',
-  },
-  {
-    text: "You can do what's reasonable or you can decide what's possible.",
-    author: null,
-  },
+  }
 ];
