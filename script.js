@@ -1,16 +1,16 @@
 const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
-const twitterBtn = document.getElementById('twitter');
+const twitterBtn = document.querySelector('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
-const image = document.getElementById('image');
+
 
 // Show Loading
 function showLoadingSpinner() {
     loader.hidden = false;
     quoteContainer.hidden = true;
-    image.hidden = true;
+
 }
 
 // Hide Loading
@@ -18,7 +18,6 @@ function removeLoadingSpinner() {
     if (!loader.hidden) {
         quoteContainer.hidden = false;
         loader.hidden = true;
-        image.hidden = false;
     }
 }
 
@@ -59,9 +58,12 @@ function tweetQuote() {
     window.open(twitterUrl, '_blank');
 }
 
+  
 // Event Listeners
 newQuoteBtn.addEventListener('click', getQuote);
 twitterBtn.addEventListener('click', tweetQuote);
+
+
 
 // On Load
 getQuote();
