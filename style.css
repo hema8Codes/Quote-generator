@@ -51,7 +51,7 @@ body {
     position: absolute;
     width: 90%;
     left: 50%;
-    top: 30%;
+    top: 26%;
     /* bottom: auto; */
     /* right: auto; */
     transform: translateX(-50%) translateY(-50%);
@@ -152,7 +152,7 @@ button:active {
     font-size: 1.5rem;
 }
 .facebook-button:hover {
-    color: #0a65aa;
+    color: #0c3bd6;
   }
   
   .fa-facebook {
@@ -160,7 +160,7 @@ button:active {
   }
   
   .linkedin-button:hover {
-    color: #1c7ac2;
+    color: #0f068d;
   }
   
   .fa-linkedin {
