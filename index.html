@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qoute Generator</title>
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="book.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -33,12 +34,28 @@
       </div>
       <!-- Buttons -->
       <div class="button-container">
-         <button class="twitter-button" id="twitter" title="Tweet This!">
-           <i class="fab fa-twitter"></i>
-         </button>
-         <button id="new-quote">New Quote</button>
+        <div class="share-buttons">
+          <button class="twitter-button" id="twitter" title="Tweet this quote!">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button
+            class="facebook-button"
+            id="facebook"
+            title="Share this quote via Facebook!"
+          >
+            <i class="fab fa-facebook"></i>
+          </button>
+          <button
+            class="linkedin-button"
+            id="linkedin"
+            title="Share this quote on LinkedIn!"
+          >
+            <i class="fab fa-linkedin"></i>
+          </button>
+        </div>
+        <button id="new-quote" class="new-quote">New Quote!</button>
       </div>
-  </div>
+    </div>
 
   <!-- Loader -->
   <div class="loader" id="loader"></div>

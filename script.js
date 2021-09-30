@@ -1,11 +1,14 @@
+
+
 //declare constants for dynamic elements
 const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const twitterBtn = document.getElementById('twitter');
+const facebookBtn = document.getElementById('facebook');
+const linkedinBtn = document.getElementById('linkedin');
 const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
-
 
 // Show Loading
 function showLoadingSpinner() {
@@ -63,9 +66,29 @@ function tweetQuote() {
     window.open(twitterUrl, '_blank');
 }
 
+function facebookQuote() {
+  const quote = quoteText.innerText;
+  const author = authorText.innerText;
+  const title = "Quote Generator";
+  const personalLink = "https://hema8codes.github.io/Quote-generator/";
+  const facebookUrl = `http://www.facebook.com/sharer.php?s=100&p[title]=${title}&p[url]=${encodeURIComponent(
+    personalLink)}&p[quote]=${quote} ~${author}`;
+  window.open(facebookUrl, '_blank');
+}
+
+function linkedinQoute(){
+    const personalLink = "https://hema8codes.github.io/Quote-generator/";
+    const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+    personalLink
+  )}`;
+    window.open(linkedinUrl, '_blank');
+}
+
 // Event Listeners
 newQuoteBtn.addEventListener('click', newQuote);
 twitterBtn.addEventListener('click', tweetQuote);
+facebookBtn.addEventListener('click', facebookQuote);
+linkedinBtn.addEventListener('click',linkedinQoute);
 
 // On Load
 getQuotes();

@@ -108,14 +108,14 @@ body {
 }
 
 .quote-author {
-    margin-top: 15px;
+    /* margin-top: 15px; */
     font-size: 1.75rem;
     font-weight: 400;
     font-style: italic;
 }
 
 .button-container {
-    margin-top: 15px;
+    /* margin-top: 15px; */
     display: flex;
     justify-content: space-between;
 }
@@ -131,6 +131,7 @@ button {
     background: #333;
     outline: none;
     padding: 0.5rem 1.8rem;
+    filter: brightness(90%);
     box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
 }
 
@@ -150,6 +151,21 @@ button:active {
 .fa-twitter {
     font-size: 1.5rem;
 }
+.facebook-button:hover {
+    color: #0a65aa;
+  }
+  
+  .fa-facebook {
+    font-size: 1.5rem;
+  }
+  
+  .linkedin-button:hover {
+    color: #1c7ac2;
+  }
+  
+  .fa-linkedin {
+    font-size: 1.5rem;
+  }
 
 .heart{
     color: rgb(251, 251, 251);
